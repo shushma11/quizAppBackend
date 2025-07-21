@@ -16,22 +16,7 @@ A Spring Boot-based backend service for managing quizzes and questions. This app
 ---
 
 ## 📁 Project Structure
-quizAppBackend/
-├── controller/
-│ ├── QuestionController.java
-│ └── QuizController.java
-├── model/
-│ ├── Question.java
-│ ├── Quiz.java
-│ ├── Response.java
-│ └── QuestionWrapper.java
-├── service/
-│ ├── QuestionService.java
-│ └── QuizService.java
-├── dao/
-│ ├── QuestionRepository.java
-│ └── QuizRepository.java
-└── application.properties
+<pre> quizAppBackend/ ├── controller/ │ ├── QuestionController.java │ └── QuizController.java ├── model/ │ ├── Question.java │ ├── Quiz.java │ ├── Response.java │ └── QuestionWrapper.java ├── service/ │ ├── QuestionService.java │ └── QuizService.java ├── dao/ │ ├── QuestionRepository.java │ └── QuizRepository.java ├── application.properties └── QuizAppApplication.java </pre>
 
 
 ---
@@ -53,5 +38,29 @@ quizAppBackend/
 ```bash
 git clone https://github.com/shushma11/quizAppBackend.git
 cd quizAppBackend
+
+````
+2. **Configure your database in application.properties**
+
+```bash
+spring.datasource.url=jdbc:mysql://localhost:3306/quizdb
+spring.datasource.username=root
+spring.datasource.password=yourpassword
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+```
+3. Run the application
+
+Using Maven wrapper:
+
+```bash
+./mvnw spring-boot:run
+Or directly from your IDE (e.g., IntelliJ or VS Code)
+
+Application will start at:
+http://localhost:8080/
+
+```
+
 
 
