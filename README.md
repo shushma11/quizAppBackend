@@ -16,7 +16,22 @@ A Spring Boot-based backend service for managing quizzes and questions. This app
 ---
 
 ## 📁 Project Structure
-<pre> quizAppBackend/ ├── controller/ │ ├── QuestionController.java │ └── QuizController.java ├── model/ │ ├── Question.java │ ├── Quiz.java │ ├── Response.java │ └── QuestionWrapper.java ├── service/ │ ├── QuestionService.java │ └── QuizService.java ├── dao/ │ ├── QuestionRepository.java │ └── QuizRepository.java ├── application.properties └── QuizAppApplication.java </pre>
+<pre> quizAppBackend/
+├── controller/
+│ ├── QuestionController.java
+│ └── QuizController.java
+├── model/
+│ ├── Question.java
+│ ├── Quiz.java
+│ ├── Response.java
+│ └── QuestionWrapper.java
+├── service/
+│ ├── QuestionService.java
+│ └── QuizService.java
+├── dao/
+│ ├── QuestionRepository.java
+│ └── QuizRepository.java
+└── application.properties </pre>
 
 
 ---
